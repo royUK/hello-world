@@ -3,7 +3,7 @@
 Option Explicit
 Function DateFind(r As Range, dt As String)
     Dim c As Range
-    For Each c In r
+    For Each c In r.Cells
         If c.Value = dt Then
             MsgBox c.Row
             Exit Function
